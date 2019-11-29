@@ -1,0 +1,16 @@
+
+*****************************************************
+<body>
+<h2>Cars to be rented: </h2>
+
+<div *ngFor="let car of cars">
+
+  <h3>
+    {{ car.brand }}
+  </h3>
+
+  <a [routerLink]="'/cars/' + car.plateNumber">Details</a>
+
+</div>
+</body>
+
